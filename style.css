@@ -14,12 +14,12 @@ body {
     width: 45%;
     margin: auto;
     display: grid;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     border-radius: 8px;
     grid-template-columns: 2fr 1fr;
     place-items: center;
     align-content: space-evenly;
-    gap: 24px;
+    gap: 1.5rem;
 
 }
 
@@ -49,33 +49,29 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .fa-solid {
     color: rgb(228, 34, 34);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 input {
-    width: 475px;
+    width: 29.6875rem;
     display: inline-flex;
-    height: 40px;
-    padding-left: 12px;
+    height: 2.5rem;
+    padding-left: 0.75rem;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #171717;
     border: none;
     color: #f2f2f2;
-    font-size: 16px;
+    font-size: 1rem;
     outline: none;
 }
 
 table {
     width: 100%;
     color: #f2f2f2;
-    border: 1.5px solid #446c03;
+    border: .0938rem solid #446c03;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 
 }
 
@@ -86,7 +82,7 @@ td {
 
 h1 {
     grid-column: span 2;
-    margin-top: 18px;
+    margin-top: 1.125rem;
     color: #7AC008;
     font-weight: 600;
 }
@@ -110,8 +106,8 @@ h2 {
 
 .add-button {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 12px 13px 12px 14px;
     justify-content: center;
     align-items: center;
@@ -151,7 +147,7 @@ h2 {
 
 .length,
 .width {
-    width: 80px;
+    width: 5rem;
 }
 
 .total-green {
@@ -161,8 +157,8 @@ h2 {
 
 .clean {
     display: flex;
-    width: 100px;
-    height: 40px;
+    width: 6.25rem;
+    height: 2.5rem;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -170,7 +166,7 @@ h2 {
     border: none;
     color: #7AC008;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     border: 1px solid #142000;
 
@@ -186,12 +182,12 @@ h2 {
 @media (max-width: 480px) {
     .container {
         width: 100%;
-        padding: 10px;
+        padding: .625rem;
     }
 
     table,
     th {
-        font-size: 15px;
+        font-size: .9375rem;
 
     }
 
@@ -201,20 +197,20 @@ h2 {
     }
 
     td {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
     }
 
     .numbers {
 
-        gap: 15px;
+        gap: .8125rem;
         display: flex;
         align-items: center;
         grid-column: span 2;
 
         h2 {
 
-            font-size: 20px;
+            font-size: 1.25rem;
         }
 
     }

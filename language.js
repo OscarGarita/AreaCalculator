@@ -14,6 +14,7 @@ const resources = {
             "length": "Largo",
             "width": "Ancho",
             "delete": "Borrar"
+            
 
         }
     }

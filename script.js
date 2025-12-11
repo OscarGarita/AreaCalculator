@@ -8,7 +8,7 @@ btnClean.addEventListener('click', cleanTable);
 
 
 function addData() {
-    
+
     var nameInput = document.getElementById('txtName');
     var lengthInput = document.getElementById('txtLength');
     var widthInput = document.getElementById('txtWidth');
@@ -46,7 +46,9 @@ function addData() {
         return;
     }
 
-    var total = (txtLength * txtWidth).toFixed(2);
+    var total = (txtLength * txtWidth);
+    total = total.toFixed(2);
+
     var table = document.getElementById('table');
 
     var tableRow = document.createElement('tr');
@@ -113,14 +115,26 @@ function updateTotal() {
     }
 }
 function cleanTable() {
-    const txtTotal = document.getElementById('totalArea');
-    const table = document.getElementById('table');
+    const lang = navigator.language || navigator.userLanguage;
 
-    while (table.rows.length > 0) {
-        table.deleteRow(1);
+    let mensaje = lang.startsWith("es")
+        ? "¿Seguro que desea limpiar?"
+        : "Are you sure?";
+
+    if (confirm(mensaje)) {
+        // SOLO SI ACEPTA, LIMPIA
+        const txtTotal = document.getElementById('totalArea');
+        const table = document.getElementById('table');
+
+        while (table.rows.length > 1) { // deja la fila de encabezado
+            table.deleteRow(1);
+        }
+
+        txtTotal.textContent = '';
     }
 
-    txtTotal.textContent = '';
+
+
 }
 
 

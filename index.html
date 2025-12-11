@@ -22,19 +22,24 @@
 <body>
     <div class="container">
         <h1 id="title">Area Calculator</h1>
+
+        <!-- <div class="button-figures-container">
+
+            <button onclick="window.location.href='figures.html'" btnFigures" class="button figures">Calculate
+                Figures</button>
+        </div>
+    -->
+
         <div class="name">
 
             <input type="text" class="text-box name" id="txtName" placeholder="Area Name">
         </div>
+        
         <div class="numbers">
             <div>
 
                 <input type="number" class="text-box length" id="txtLength" placeholder="Length">
                 <input type="number" class="text-box width" id="txtWidth" placeholder="Width">
-            </div>
-            <div>
-
-                <h2 class="total">Total: <span class="total-green" id="totalArea">m2</span></h2>
             </div>
 
             <div class="button-container">
@@ -48,6 +53,9 @@
         <div class="btn-clean-container">
 
             <button id="btnClean" class="button clean">CLEAR</button>
+        </div>
+        <div class="total-container">
+            <h2 class="total">Total: <span class="total-green" id="totalArea">m2</span></h2>
         </div>
 
         <div class="container-table">

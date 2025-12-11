@@ -150,12 +150,18 @@ h2 {
     width: 5rem;
 }
 
+.total-container {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
 .total-green {
     color: #7AC008;
     font-weight: 600;
 }
 
-.clean {
+.button {
     display: flex;
     width: 6.25rem;
     height: 2.5rem;
@@ -174,15 +180,31 @@ h2 {
 
 }
 
+.button-figures-container {
+    grid-column: span 2;
+    width: 100%;
+
+    justify-self: start;
+}
+
+.figures {
+    width: 10.625rem;
+}
+
 .button-container {
     justify-self: right;
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .container {
         width: 100%;
         padding: .625rem;
+    }
+
+    .total-container {
+
+        justify-content: left;
     }
 
     table,
